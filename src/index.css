@@ -1,0 +1,443 @@
+:root {
+  --nexcent-primary: #4caf4f; /* عدّل اللون لو عندك كود أدق من Figma */
+  --nexcent-text: #4d4d4d;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #ffffff;
+}
+
+.navbar-brand span {
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--nexcent-text);
+  font-weight: 500;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--nexcent-primary);
+}
+
+/* زرار Register Now */
+
+.btn-nexcent {
+  background-color: var(--nexcent-primary);
+  border-color: var(--nexcent-primary);
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.btn-nexcent:hover {
+  background-color: #3e8b42;
+  border-color: #3e8b42;
+  color: #ffffff;
+}
+/* Hero section */
+
+.hero-section {
+  background-color: #f5f7fa; /* نفس لون الخلفية في التصميم */
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 2.6vw + 1rem, 3rem);
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+.hero-title span {
+  color: var(--nexcent-primary); /* الأخضر */
+}
+
+.hero-subtitle {
+  color: #717171;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .hero-subtitle {
+    margin: 0;
+  }
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* الـ Dots بتاعة السلايدر */
+
+.hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #cfdde3;
+  margin: 0 4px;
+}
+
+.hero-dot-active {
+  background-color: var(--nexcent-primary);
+}
+/* ======= Shared section styles ======= */
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+.section-subtitle {
+  color: #717171;
+  font-size: 0.95rem;
+}
+
+/* ======= Clients section ======= */
+
+.clients-section {
+  background-color: #ffffff;
+}
+
+.client-logo {
+  max-height: 70px; /* كبّرناها */
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+/* الكروت */
+
+.client-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(171, 190, 209, 0.3);
+}
+
+.client-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background-color: rgba(76, 175, 79, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: var(--nexcent-primary);
+  font-size: 26px;
+}
+
+.client-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+.client-card-text {
+  color: #717171;
+  font-size: 0.9rem;
+}
+/* Feature / Pixelgrade section */
+
+.feature-section {
+  background-color: #ffffff;
+}
+
+.feature-section .section-subtitle {
+  max-width: 520px;
+}
+.text-nexcent-primary {
+  color: var(--nexcent-primary);
+}
+
+/* Stats section */
+
+.stats-section {
+  background-color: #f5f7fa; /* نفس خلفية الهيرو تقريبًا */
+}
+
+.stats-left .section-subtitle {
+  max-width: 360px;
+}
+
+.stat-item {
+  min-height: 64px;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: rgba(76, 175, 79, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--nexcent-primary);
+  font-size: 22px;
+}
+
+.stat-number {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #4d4d4d;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #717171;
+}
+/* نفس ستايل Pixelgrade لكن بخلفية مختلفة لو حابب */
+
+.feature-section-alt {
+  background-color: #f5f7fa; /* زي الصورة */
+}
+/* Customer highlight section */
+
+.customer-section {
+  background-color: #f0f0f0;
+}
+
+.customer-card {
+  background-color: #f0f0f0;
+}
+
+@media (min-width: 768px) {
+  .customer-card {
+    padding: 32px 40px;
+  }
+}
+
+.customer-main-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.customer-text {
+  color: #717171;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.customer-name {
+  font-weight: 600;
+}
+
+.customer-role {
+  color: #89939e;
+  font-size: 0.85rem;
+}
+
+.customer-logos .customer-logo {
+  max-height: 32px;
+  object-fit: contain;
+}
+
+.customer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--nexcent-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.customer-link:hover {
+  color: #3e8b42;
+  text-decoration: underline;
+}
+/* Blog / articles section */
+
+.blog-section {
+  background-color: #f5f7fa;
+}
+
+.blog-card {
+  border-radius: 16px;
+  background-color: transparent;
+  border: none;
+  /* شيل overflow و z-index من هنا */
+}
+
+.blog-card-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  z-index: 1;
+}
+
+.blog-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  /* شيل z-index من هنا */
+}
+
+.blog-card-body {
+  position: relative; /* مهم عشان z-index يشتغل */
+  z-index: 2; /* أعلى من الصورة */
+  margin: -40px 16px 0;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 10px 30px rgba(171, 190, 209, 0.4);
+  text-align: left;
+}
+
+.blog-card-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #4d4d4d;
+  margin-bottom: 12px;
+}
+
+.blog-card-link {
+  color: var(--nexcent-primary);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.blog-card-link span {
+  margin-left: 4px;
+}
+
+.blog-card-link:hover {
+  color: #3e8b42;
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .blog-card-image {
+    height: 190px;
+  }
+}
+/* CTA section */
+
+.cta-section {
+  background-color: #f5f7fa;
+}
+
+.cta-title {
+  font-size: clamp(2rem, 3vw + 0.5rem, 2.8rem);
+  font-weight: 600;
+  color: #263238; /* أغمق شوية من باقي النص */
+}
+/* Footer */
+
+.footer {
+  background-color: #263238;
+  color: #f5f7fa;
+}
+
+.footer-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.footer-text {
+  color: #cfdde3;
+  font-size: 0.85rem;
+}
+
+.footer-heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  display: block;
+  font-size: 0.85rem;
+  color: #cfdde3;
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* أيكونات السوشيال */
+
+.footer-social {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.footer-social:hover {
+  background-color: var(--nexcent-primary);
+  color: #ffffff;
+}
+
+/* حقل الإيميل */
+
+.footer-input-wrapper {
+  position: relative;
+}
+
+.footer-input {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #ffffff;
+  font-size: 0.85rem;
+  padding-right: 40px;
+}
+
+.footer-input::placeholder {
+  color: #9ba4af;
+}
+
+.footer-input:focus {
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.footer-input-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #cfdde3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.footer-input-icon:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .d-flex {
+    justify-content: center !important;
+  }
+}
